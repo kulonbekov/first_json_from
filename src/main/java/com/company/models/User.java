@@ -2,25 +2,26 @@ package com.company.models;
 
 public class User {
 
-    private Long UserId;
-    private Long Id;
+    private Long userId;
+    private Long id;
     private String title;
     private String body;
 
+
     public Long getUserId() {
-        return UserId;
+        return userId;
     }
 
     public void setUserId(Long userId) {
-        UserId = userId;
+        this.userId = userId;
     }
 
     public Long getId() {
-        return Id;
+        return id;
     }
 
     public void setId(Long id) {
-        Id = id;
+        this.id = id;
     }
 
     public String getTitle() {
@@ -42,10 +43,12 @@ public class User {
     @Override
     public String toString() {
         return "User{" +
-                "UserId=" + UserId +
-                ", Id=" + Id +
+                "userId=" + userId +
+                ", id=" + id +
                 ", title='" + title + '\'' +
                 ", body='" + body + '\'' +
-                '}';
+                '}' + '\n';
     }
+
+
 }
